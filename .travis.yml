@@ -1,5 +1,5 @@
 language: go
-go: 
+go:
  - 1.4
  - 1.5
  - 1.6
@@ -15,7 +15,7 @@ matrix:
   allow_failures:
     - go: tip
 
-go_import_path: gopkg.in/mcuadros/go-syslog.v2
+go_import_path: gopkg.in/eadz/go-syslog.v3
 
 install:
   - go get -v -t ./...

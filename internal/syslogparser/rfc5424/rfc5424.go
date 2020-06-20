@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"time"
 
-	"gopkg.in/mcuadros/go-syslog.v2/internal/syslogparser"
+	"gopkg.in/eadz/go-syslog.v3/internal/syslogparser"
 )
 
 const (
