@@ -82,10 +82,7 @@ func (s *Server) SetDatagramChannelSize(size int) {
 // Default TLS peer name function - returns the CN of the certificate
 func defaultTlsPeerName(tlsConn *tls.Conn) (tlsPeer string, ok bool) {
 	state := tlsConn.ConnectionState()
-	if len(state.PeerCertificates) <= 0 {
-		return "", false
-	}
-	cn := state.PeerCertificates[0].Subject.CommonName
+	cn := state.ServerName
 	return cn, true
 }
 
